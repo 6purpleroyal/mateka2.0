@@ -2,11 +2,9 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="mt-16">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="glass rounded-2xl p-6 text-center">
-          <p>&copy; {new Date().getFullYear()} Deliverance Church Mateka. All rights reserved.</p>
-        </div>
+    <footer className="bg-dark text-white text-center py-3 bg-gray-800">
+      <div className="container mx-auto px-4">
+        <p>&copy; {new Date().getFullYear()} Deliverance Church Mateka. All rights reserved.</p>
       </div>
     </footer>
   );

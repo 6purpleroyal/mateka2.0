@@ -27,10 +27,9 @@ const Sermons = () => {
   ];
 
   return (
-    <section id="sermons" className="max-w-6xl mx-auto px-6 py-16">
-      <h2 className="text-center text-3xl md:text-4xl font-bold mb-6">Sermons</h2>
-      <p className="text-center text-slate-300 mb-10">Be encouraged by recent messages</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section id="sermons" className="container mx-auto my-5 px-4">
+      <h2 className="text-center text-3xl font-bold mb-4">Sermons</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {sermonData.map((sermon, index) => (
           <SermonCard key={index} {...sermon} />
         ))}
